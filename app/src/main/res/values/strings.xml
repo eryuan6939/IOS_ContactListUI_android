@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">CodingAssignment</string>
+
+    <string name="main_buttongroup">Group</string>
+    <string name="main_pagetitle">Contact</string>
+
+    // Contact Details
+    <string name="contactdetails_buttoncontact">Contact</string>
+    <string name="contactdetails_buttonedit">Edit</string>
+    <string name="contactdetails_message">message</string>
+    <string name="contactdetails_call">call</string>
+    <string name="contactdetails_email">email</string>
+    <string name="contactdetails_favourite">favourite</string>
+    <string name="contactdetails_id">Contact ID</string>
+
+    // Contact Edit
+    <string name="contactedit_buttoncancel">Cancel</string>
+    <string name="contactedit_buttondone">Done</string>
+    <string name="contactedit_firstname">First Name</string>
+    <string name="contactedit_lastname">Last Name</string>
+    <string name="contactedit_mobile">mobile</string>
+    <string name="contactedit_id">ID</string>
+</resources>

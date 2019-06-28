@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContactAddActivity">
+
+    <LinearLayout
+        android:id="@+id/linearlayout_TopBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/textviewCancelButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_weight="1"
+            android:text="@string/contactedit_buttoncancel"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#b4fbf9"
+            android:clickable="true"/>
+
+        <TextView
+            android:id="@+id/textviewDoneButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_weight="1"
+            android:text="@string/contactedit_buttondone"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#b4fbf9"
+            android:clickable="true"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearlayout_TopBar"
+        android:paddingTop="5dp"
+        android:paddingBottom="20dp"
+        android:background="@drawable/gradient_header">
+
+        <RelativeLayout
+            android:id="@+id/imgProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_margin="5dp"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#ffffff"
+                android:src="@drawable/ic_person_circle"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearlayout_FirstName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/layoutProfile">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="right"
+            android:layout_margin="10dp"
+            android:layout_weight="0.3"
+            android:text="@string/contactedit_firstname"/>
+
+        <EditText
+            android:id="@+id/edittext_firstname"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@null"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearlayout_LastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/linearlayout_FirstName">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="right"
+            android:layout_margin="10dp"
+            android:layout_weight="0.3"
+            android:text="@string/contactedit_lastname"/>
+
+        <EditText
+            android:id="@+id/edittext_lastname"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@null"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+</RelativeLayout>
